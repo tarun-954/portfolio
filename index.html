@@ -582,8 +582,8 @@
 						<div class="item">
 							<div class="testimony-wrap py-4" style="overflow: hidden;">
 								<div class="text d-flex justify-content-center align-items-center" style="position: relative; height: 300px;">
-									<img src="images/1731263652952.jpeg" alt="silver medal" 
-										 style="max-height: 100%; max-width: 100%; transform: rotate(-90deg); object-fit: contain;">
+									<img src="images/1731263652952.jpeg" alt="silver medal"  class="medalImage"
+										 style="max-height: 100%; max-width: 100%; object-fit: contain;">
 								</div>
 								<div class="d-flex flex-column align-items-center mt-3 text-center">
 									<div class="pl-3">
@@ -598,7 +598,7 @@
 						<div class="item">
 							<div class="testimony-wrap py-4" style="overflow: hidden;">
 								<div class="text d-flex justify-content-center align-items-center" style="position: relative; height: 300px;">
-									<img src="images/Screenshot 2025-04-27 120633.png" alt="silver medal" 
+									<img src="images/Screenshot 2025-04-27 120633.png" alt="silver medal"  class="medalImage"
 										 style="max-height: 100%; max-width: 100%; object-fit: contain;">
 								</div>
 								<div class="d-flex flex-column align-items-center mt-3 text-center">
@@ -613,7 +613,7 @@
 						<div class="item">
 							<div class="testimony-wrap py-4" style="overflow: hidden;">
 								<div class="text d-flex justify-content-center align-items-center" style="position: relative; height: 300px;">
-									<img src="images/ngo certificate without error.jpg" alt="silver medal" 
+									<img src="images/ngo certificate without error.jpg" alt="silver medal"  class="medalImage"
 										 style="max-height: 100%; max-width: 100%; object-fit: contain;">
 								</div>
 								<div class="d-flex flex-column align-items-center mt-3 text-center">
@@ -627,22 +627,22 @@
 						
 						<div class="item">
 							<div class="testimony-wrap py-4" style="overflow: hidden;">
-								<div class="text d-flex justify-content-center align-items-center" style="position: relative; height: 300px;">
-									<img src="images/Screenshot 2025-04-27 124353.png" alt="silver medal" 
-										 style="max-height: 100%; max-width: 100%; object-fit: contain;">
+							  <div class="text d-flex justify-content-center align-items-center" style="position: relative; height: 300px;">
+								<img src="images/Screenshot 2025-04-27 160833.png" alt="algorithns" class="medalImage"
+								  style="max-height: 100%; max-width: 100%; object-fit: contain; cursor: pointer;">
+							  </div>
+							  <div class="d-flex flex-column align-items-center mt-3 text-center">
+								<div class="pl-3">
+								  <p class="name mb-1">Algorithms (4 Courses)</p>
+								  <span class="position">Coursera</span>
 								</div>
-								<div class="d-flex flex-column align-items-center mt-3 text-center">
-									<div class="pl-3">
-										<p class="name mb-1">MERN Stack Development</p>
-										<span class="position">Cipher Schools</span>
-									</div>
-								</div>
+							  </div>
 							</div>
-						</div>
+						  </div>
 						<div class="item">
 							<div class="testimony-wrap py-4" style="overflow: hidden;">
 								<div class="text d-flex justify-content-center align-items-center" style="position: relative; height: 300px;">
-									<img src="images/WhatsApp Image 2025-04-27 at 13.56.02_301ef093.jpg" alt="silver medal" 
+									<img src="images/WhatsApp Image 2025-04-27 at 13.56.02_301ef093.jpg" alt="silver medal"  class="medalImage"
 										 style="max-height: 100%; max-width: 100%; object-fit: contain;">
 								</div>
 								<div class="d-flex flex-column align-items-center mt-3 text-center">
@@ -659,6 +659,21 @@
 		</div>
 	</section>
 
+	<script>
+		const imgs = document.getElementsByClassName('medalImage');
+		Array.from(imgs).forEach(function(img) {
+		  img.addEventListener('click', function () {
+			if (img.requestFullscreen) {
+			  img.requestFullscreen();
+			} else if (img.webkitRequestFullscreen) { /* Safari */
+			  img.webkitRequestFullscreen();
+			} else if (img.msRequestFullscreen) { /* IE11 */
+			  img.msRequestFullscreen();
+			}
+		  });
+		});
+	  </script>
+	  
 
 	<section class="ftco-section bg-light" id="blog-section">
 		<div class="container">
